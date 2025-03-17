@@ -1,10 +1,82 @@
+/* Define the flashing colors animation */
+@keyframes flashColors {
+    0% { background-color: red; }
+    25% { background-color: blue; }
+    50% { background-color: green; }
+    75% { background-color: yellow; }
+    100% { background-color: purple; }
+  }
+  
+  /* Apply the animation to the body or any other element */
 body {
+    animation: flashColors 5s infinite; /* 5 seconds duration, infinite loop */
+    transition: background-color 1s ease; /* Smooth transition between colors */
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
+
+
+    /* Firework particles */
+    .firework {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        opacity: 0;
+        animation: explode 2s ease-out infinite;
+      }
+  
+      /* Firework explosion animation */
+      @keyframes explode {
+        0% {
+          transform: scale(0);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.5);
+          opacity: 0.8;
+        }
+        100% {
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
+  
+      /* Animation for random firework positions */
+      @keyframes randomPosition {
+        0% {
+          top: 0;
+          left: 50%;
+          background-color: red;
+        }
+        25% {
+          top: 40%;
+          left: 30%;
+          background-color: blue;
+        }
+        50% {
+          top: 70%;
+          left: 60%;
+          background-color: green;
+        }
+        75% {
+          top: 20%;
+          left: 80%;
+          background-color: yellow;
+        }
+        100% {
+          top: 10%;
+          left: 20%;
+          background-color: purple;
+        }
+      }
+  
+      .firework {
+        animation: explode 2s ease-out infinite, randomPosition 3s infinite;
+      }
 
 .container {
     max-width: 700px;
@@ -42,7 +114,7 @@ blockquote {
 ul {
     text-align: left;
     display: inline-block;
-    list-style-type: "🔥 ";
+    list-style-type: "• ";
 }
 
 textarea {

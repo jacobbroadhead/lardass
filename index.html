@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  
     <div class="container">
-        <h1>🎉 Congratulations, [Your Friend's Name]! 🎉</h1>
-        <h2>🏆 Employee of the Month 🏆</h2>
-        <p>We are *so proud* (and shocked) that [Your Friend’s Name] has actually done something worthy of recognition.</p>
+        <h1>🎉 Congratulations, Zack (Lardass) Wall! 🎉</h1>
+        <h2>🏆 UTAH COUNTY ––– Employee of the Month 🏆</h2>
+        <p>We are <strong>so proud</strong> (and shocked) that Zack has actually done something worthy of recognition.</p>
         
         <div class="image-gallery">
             <img src="friend1.jpg" alt="Embarrassing photo 1">
@@ -19,24 +24,47 @@
         </div>
         
         <h3>📢 Official Company Statement:</h3>
-        <blockquote>
-            "Against all odds, [Your Friend’s Name] has somehow managed to impress us. We are still investigating how this happened."
+        <blockquote style="padding-bottom: 12px; margin-bottom: 0px;">
+            "Deputy Wall's dedication... wearing a hot vinyl suit... Deputy Wall is not afraid."
         </blockquote>
+
+        <div class="county-post" style="margin-top: 0px; padding-top: 0px;">
+            <img src="/Users/jacobbroadhead/Code/Websites/Lardass.gay/images/monkey.png" style="position: relative; width: 100%; z-index: 2; margin-top: 0; padding-top: 0;">
+            <img src="/Users/jacobbroadhead/Code/Websites/Lardass.gay/images/employee-of-the-month.jpg" style="position:relative; width: 60%; margin-top: -180px; z-index: 1;">
+        </div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
         
-        <h3>🔥 Fun Facts:</h3>
+        <h3 style="margin-bottom: 0px">🔥 Fun Facts:</h3>
         <ul>
-            <li>Once spilled coffee on the boss’s laptop ☕💻</li>
-            <li>Survives on free office snacks 🍩</li>
-            <li>Still doesn't know how to use the printer 📠</li>
+            <li>Doesn't know how to work a safety</li>
+            <li>Survives on Reeses Big Cups</li>
+            <li>Check out that hair</li>
         </ul>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
 
-        <h3>🎤 What People Are Saying:</h3>
-        <p>“Wait… [Your Friend's Name] won? Are you sure?” – [Coworker]</p>
-        <p>“Is this a prank?” – [Another Coworker]</p>
-
-        <h3>👏 Leave a Comment:</h3>
-        <textarea placeholder="Write something funny..."></textarea>
-        <button>Post</button>
+        <h3>What People Are Saying:</h3>
+        <p style="font-style: italic;">“We are all so proud of Lardass. He makes us want to be better.” – [Deputy Wankier]</p>
+        <p style="font-style: italic;">“Who's Wall?” – [Deputy Broadhead]</p>
+        <p style="font-style: italic;">“Deputy Wall makes me want to be a better woman.” – [Anonymous]</p>
     </div>
+    <script>
+        // JavaScript to create multiple fireworks at random intervals
+        const createFireworks = () => {
+          for (let i = 0; i < 5; i++) {
+            const firework = document.createElement('div');
+            firework.classList.add('firework');
+            document.body.appendChild(firework);
+          }
+        };
+    
+        // Create fireworks at random intervals
+        setInterval(createFireworks, 2000); // Fireworks appear every 2 seconds
+      </script>
 </body>
 </html>
